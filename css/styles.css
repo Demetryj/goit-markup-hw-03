@@ -33,10 +33,14 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* header */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   background-color: #ffffff;
 
   border-bottom: 1px solid #ececec;
@@ -65,11 +69,6 @@ body {
   text-decoration: none;
 
   color: #000000;
-}
-
-.navigator > .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-color {
@@ -109,6 +108,8 @@ body {
 .link {
   display: flex;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link-page:not(:last-child) {
@@ -153,14 +154,12 @@ body {
 
 /* main */
 
-.container.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* Герой Секція 1*/ /* Тимчасовий фон для героя, щоб було видно текст */
 .hero {
-  background-color: #0b1261;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -204,6 +203,11 @@ body {
 }
 
 /* Секція 2 */
+
+.work {
+  padding-top: 94px;
+}
+
 .work-title {
   display: none;
 }
@@ -248,6 +252,12 @@ body {
   margin-right: 0;
 }
 /* Секція 3 */
+
+.technology {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .technology-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -284,6 +294,9 @@ body {
 
 /* Секція 4 */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 
@@ -310,7 +323,7 @@ body {
 
 .team-profession {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   line-height: 1.19;
   text-align: center;
@@ -343,7 +356,8 @@ body {
   margin-right: 0;
 }
 
-.team-specialist > .card {
+.team-info {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -363,8 +377,11 @@ body {
 }
 
 .logo.footer {
+  margin-right: 0;
   display: block;
   margin-bottom: 20px;
+
+  color: var(--wite-text-color);
 }
 
 .contacts-list {
@@ -437,6 +454,8 @@ body {
 .nav {
   display: flex;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   list-style: none;
 }
@@ -449,6 +468,11 @@ body {
 
 .filtres .hero-title {
   display: none;
+}
+
+.filtres {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button-library,
@@ -506,8 +530,6 @@ body {
 .projects-title {
   margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -517,14 +539,20 @@ body {
 }
 .projects-text {
   margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 0;
 
   line-height: 1.18;
   letter-spacing: 0.03em;
 
   color: var(--secondary-font-color);
+}
+
+.projects-name {
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .projects {
@@ -541,8 +569,6 @@ body {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-
-  border: 1px solid #eeeeee;
 }
 
 .projects-page:nth-child(3n) {
@@ -551,10 +577,6 @@ body {
 
 .projects-page:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-
-.projects-page > .card {
-  margin-bottom: 20px;
 }
 
 /* Підвал */
